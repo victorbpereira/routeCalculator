@@ -6,6 +6,16 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
+function alert() {
+    const alert = document.querySelector(".alert")
+    alert.classList.add("showAlert")
+    setTimeout(() => {
+        alert.classList.remove("showAlert")
+    }, 4000)
+}
+
+alert()
+
 function drivePrice(km, min, rua) {
     const box = document.querySelector(".box")
     let price = 5 + ((2*km) + (0.5*min))
