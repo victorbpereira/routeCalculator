@@ -38,6 +38,8 @@ function setRout(lat, lng) {
             L.latLng(-5.0753470219714, -42.790111899375916) // Fim da rota
         ],
         routeWhileDragging: true,
+        routeWhileDragging: false,
+        show: false
     }).addTo(map);
 
     //Pega informações sobre a rota
